@@ -160,8 +160,12 @@ ________________________
     width: 150px;
 }
 
+
 .item1{
     background-color: rgb(255, 190, 225);
+    position : sticky ;
+   top: 50 px;
+    left: 50; 
 }
 
 .item2{
@@ -185,12 +189,24 @@ ________________________
     background-color: var(--primary-300);
 }
 
+.box__percent {
+    width: 50%;
+    }
+    .box__pixels {
+    width: 200px;
+    }
+
 .font__container {
     height: auto;
     margin: 10px;
     font-size: 25px;
 }
-
+.box__vw {
+    width: 50vw;
+    }
+    .box__vh {
+    height: 20vh;
+    }
 
 /*
 ________________________
@@ -215,7 +231,13 @@ ________________________
     background-color: var(--primary-100);
 }
 /* Extra small devices (phones, 600px and down) */
-
+@media screen and (max-width:600px) {
+    .media__container{
+       
+        background-color: var(--primary-200);
+    }
+    
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
